@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Bilingue - Anselme Paul Indjol</title>
+    <style>
+        /* Reset et styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #1e40af;
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            color: #1e40af;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #bfdbfe;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        /* Exemples de travail */
+        .work-example {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .example-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .example-title {
+            color: #1e40af;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .tag-blue {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .tag-green {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        
+        .tag-purple {
+            background-color: #f3e8ff;
+            color: #7e22ce;
+        }
+        
+        .tag-yellow {
+            background-color: #fef9c3;
+            color: #854d0e;
+        }
+        
+        .content-block {
+            border-left: 4px solid #bfdbfe;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .content-block-green {
+            border-left: 4px solid #86efac;
+        }
+        
+        .content-block-yellow {
+            border-left: 4px solid #fde68a;
+        }
+        
+        .work-example h4 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        /* Grid 2 colonnes */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        /* Listes */
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* Compétences */
+        .skill-list {
+            list-style-type: none;
+        }
+        
+        .skill-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        .check {
+            color: #3b82f6;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-note {
+            color: #bfdbfe;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Anselme Paul Indjol</h1>
+            <p>Portfolio Bilingue | Français & English</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 class="section-title">Présentation | Introduction</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Français</h3>
+                    <p>
+                        Enseignant de français et traducteur avec plus de 10 ans d'expérience dans l'enseignement du français en Italie. 
+                        Parfaitement bilingue français-italien, je propose mes services pour la rédaction, la traduction et l'édition 
+                        de contenu en français. Mes compétences linguistiques, mon attention aux détails et ma rigueur me permettent 
+                        de produire des textes de qualité, adaptés aux besoins spécifiques de chaque projet.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>English</h3>
+                    <p>
+                        French teacher and translator with over 10 years of experience teaching French in Italy. 
+                        Perfectly bilingual in French and Italian, I offer my services for writing, translating, and editing 
+                        French content. My language skills, attention to detail, and thoroughness allow me to produce 
+                        high-quality texts adapted to the specific needs of each project.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Échantillons de Travail | Work Samples</h2>
+            
+            <!-- Exemple 1: Plan de cours -->
+            <div class="work-example">
+                <div class="example-header">
+                    <h3 class="example-title">Plan de cours: La Francophonie mondiale</h3>
+                    <span class="tag tag-blue">Français</span>
+                </div>
+                <div class="content-block">
+                    <h4>Objectif pédagogique:</h4>
+                    <p>
+                        Familiariser les étudiants avec la diversité de la francophonie dans le monde et développer 
+                        leur compréhension des nuances culturelles et linguistiques du français selon les régions.
+                    </p>
+                    
+                    <h4>Structure du cours:</h4>
+                    <ol>
+                        <li>Introduction à la francophonie et à l'Organisation Internationale de la Francophonie</li>
+                        <li>Le français en Europe: France, Belgique, Suisse, Luxembourg</li>
+                        <li>Le français en Amérique du Nord: Québec, Acadie, Louisiane</li>
+                        <li>Le français en Afrique: Maghreb, Afrique subsaharienne</li>
+                        <li>Le français dans les Caraïbes et l'océan Indien</li>
+                    </ol>
+                    
+                    <h4>Activités pédagogiques:</h4>
+                    <ul>
+                        <li>Écoute d'extraits audio authentiques des différentes régions francophones</li>
+                        <li>Analyse comparative du vocabulaire et des expressions selon les régions</li>
+                        <li>Discussions guidées sur les influences culturelles dans la langue</li>
+                        <li>Projet de groupe: présentation d'un pays ou d'une région francophone</li>
+                    </ul>
+                </div>
+                <p class="note">
+                    Ce plan de cours a été développé pour mes classes de niveau avancé au Lycée Omodeo de Mortara, 
+                    et adapté pour différents niveaux d'apprenants.
+                </p>
+            </div>
+            
+            <!-- Exemple 2: Traduction -->
+            <div class="work-example">
+                <div class="example-header">
+                    <h3 class="example-title">Exemple de traduction français-italien</h3>
+                    <span class="tag tag-green">Traduction</span>
+                </div>
+                <div class="two-column">
+                    <div class="content-block">
+                        <h4>Texte original (français):</h4>
+                        <p>
+                            La cuisine méditerranéenne, reconnue au patrimoine immatériel de l'UNESCO, se caractérise 
+                            par sa richesse nutritionnelle et sa diversité. Basée sur la triade huile d'olive, céréales 
+                            et vin, elle privilégie les légumes frais, les fruits de saison et le poisson. Au-delà de 
+                            ses bienfaits pour la santé, elle représente un art de vivre qui favorise le partage et la 
+                            convivialité autour de la table.
+                        </p>
+                    </div>
+                    <div class="content-block content-block-green">
+                        <h4>Traduction (italien):</h4>
+                        <p>
+                            La cucina mediterranea, riconosciuta come patrimonio immateriale dell'UNESCO, si caratterizza 
+                            per la sua ricchezza nutrizionale e la sua diversità. Basata sulla triade olio d'oliva, 
+                            cereali e vino, privilegia verdure fresche, frutta di stagione e pesce. Al di là dei suoi 
+                            benefici per la salute, rappresenta un'arte di vivere che favorisce la condivisione e la 
+                            convivialità attorno alla tavola.
+                        </p>
+                    </div>
+                </div>
+                <p class="note">
+                    Cette traduction a été réalisée pour un document éducatif sur les traditions culinaires 
+                    méditerranéennes, utilisé dans le cadre d'un projet interculturel.
+                </p>
+            </div>
+            
+            <!-- Exemple 3: Rédaction éducative -->
+            <div class="work-example">
+                <div class="example-header">
+                    <h3 class="example-title">Matériel pédagogique: Les temps du passé</h3>
+                    <span class="tag tag-purple">Contenu éducatif</span>
+                </div>
+                <div class="content-block">
+                    <h4>Guide explicatif pour les étudiants:</h4>
+                    <p>
+                        En français, quatre temps principaux permettent d'exprimer des actions passées, 
+                        chacun avec une valeur spécifique:
+                    </p>
+                    
+                    <div>
+                        <h4>Le passé composé:</h4>
+                        <ul>
+                            <li>Exprime une action ponctuelle, achevée</li>
+                            <li>Ex: "J'ai mangé une pomme hier."</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>L'imparfait:</h4>
+                        <ul>
+                            <li>Décrit une action en cours, une habitude ou un état dans le passé</li>
+                            <li>Ex: "Quand j'étais petit, je jouais souvent au football."</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>Le plus-que-parfait:</h4>
+                        <ul>
+                            <li>Exprime une action antérieure à une autre action passée</li>
+                            <li>Ex: "J'avais terminé mes devoirs quand mes amis sont arrivés."</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4>Le passé simple:</h4>
+                        <ul>
+                            <li>Utilisé principalement dans la littérature pour des actions ponctuelles</li>
+                            <li>Ex: "Il prit son chapeau et sortit."</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="note">
+                    Ce matériel a été développé pour mes cours de grammaire avancée et adapté 
+                    en fonction du niveau des apprenants.
+                </p>
+            </div>
+            
+            <!-- Exemple 4: Texte en anglais -->
+            <div class="work-example">
+                <div class="example-header">
+                    <h3 class="example-title">Cultural Aspects in Language Teaching</h3>
+                    <span class="tag tag-yellow">English</span>
+                </div>
+                <div class="content-block content-block-yellow">
+                    <p>
+                        Teaching a language goes beyond grammar and vocabulary. It involves introducing students 
+                        to a different cultural mindset. In my experience as a French teacher in Italy, I have 
+                        found that incorporating cultural elements significantly enhances students' motivation 
+                        and understanding.
+                    </p>
+                    
+                    <p>
+                        When teaching French, I regularly include authentic materials such as French music, 
+                        film clips, news articles, and advertisements. These resources provide not only linguistic 
+                        input but also valuable insights into French society, traditions, and daily life. Students 
+                        develop a deeper appreciation for the language when they can connect it to real-world contexts.
+                    </p>
+                    
+                    <p>
+                        Additionally, discussing cultural differences and similarities between Italy and French-speaking 
+                        countries helps students develop critical thinking and intercultural awareness. For example, 
+                        comparing Italian and French culinary traditions or educational systems creates engaging 
+                        discussions where students can practice their language skills while expanding their cultural 
+                        knowledge.
+                    </p>
+                </div>
+                <p class="note">
+                    This short essay reflects my teaching philosophy and methodology, highlighting the importance 
+                    of cultural elements in language acquisition.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="section-title">Compétences & Services | Skills & Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>En français</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Rédaction de contenu éducatif et informatif</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Traduction français ↔ italien précise et idiomatique</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Correction et révision de textes en français</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Adaptation de contenu selon le public cible</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Recherche et vérification des faits</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>In English</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Educational and informative content creation</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Accurate and idiomatic French ↔ Italian translation</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Proofreading and revision of French texts</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Content adaptation for different target audiences</span>
+                        </li>
+                        <li class="skill-item">
+                            <span class="check">✓</span>
+                            <span>Research and fact-checking</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Anselme Paul Indjol | Enseignant de Français & Traducteur</p>
+            <p>panselmes@gmail.com | +39 389 095 5994</p>
+            <p class="footer-note">Portfolio créé en mai 2025 pour Siege Media</p>
+        </div>
+    </footer>
+</body>
+</html>
